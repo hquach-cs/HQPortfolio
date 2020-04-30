@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import SocialLink from "./SocialLink";
-import "./../styles/SocialLink_right.css";
+import "./../styles/sociallink_right.css";
 
 function Social(props) {
   return (
