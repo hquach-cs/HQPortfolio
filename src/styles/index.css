@@ -2,6 +2,17 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  background: linear-gradient(-45deg, #1f2833, #0b0c10) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+div {
+  display: block;
 }
 
 h1,
@@ -15,20 +26,20 @@ a {
 
 p {
   font-family: "Roboto Mono", monospace;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 90px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 64px;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 h4 {
@@ -38,6 +49,7 @@ h4 {
 a {
   font-size: 20px;
   color: inherit;
+  font-family: "Rubik", sans-serif;
 }
 
 a:hover {
@@ -45,8 +57,8 @@ a:hover {
   text-decoration: inherit;
 }
 
-ul {
-  list-style-type: none;
+ul,
+ol {
   margin: 0;
   padding: 0;
 }

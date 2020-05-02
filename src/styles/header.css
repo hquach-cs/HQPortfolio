@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  transition: top 0.45s;
+}
+
+.header::after,
+.header::before {
+}
+
+.header--hidden {
+  top: -70px;
+}
