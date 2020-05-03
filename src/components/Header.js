@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import "./../styles/header.css";
-import NavBar from "./Navbar";
+import Navbar from "./Navbar";
 
 export default class Header extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       prevScrollpos: window.pageYOffset,
       visible: true,
@@ -34,12 +33,13 @@ export default class Header extends Component {
       visible,
     });
   };
+
   render() {
     return (
       <header
         className={this.state.visible ? "header" : "header header--hidden"}
       >
-        <NavBar active={this.props.active} />
+        <Navbar active={this.props.active} />
       </header>
     );
   }

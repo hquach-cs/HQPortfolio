@@ -4,8 +4,9 @@ import "./styles/index.css";
 //import Social from "./components/Social";
 //import Loading from "./components/Loading";
 import Header from "./components/Header";
+import Loading from "./components/Loading";
 import Welcome from "./components/Welcome";
-import About from "./components/About";
+// import About from "./components/About";
 
 class App extends Component {
   constructor(props) {
@@ -17,18 +18,31 @@ class App extends Component {
         projects: false,
         contact: false,
       },
+      loading: true,
     };
   }
   render() {
-    return (
-      <div style={{ disply: "flex" }}>
-        <Header active={this.state.active} />
-        <div style={{ width: "100%", height: "2000px" }}>
-          <Welcome />
-          <About />
+    if (!this.state.loading) {
+      return (
+        <div style={{ disply: "flex" }}>
+          <Header active={this.state.active} />
+          <div style={{ width: "100%", height: "2000px" }}>
+            <Welcome />
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div>
+          <Loading />
+          {setTimeout(() => {
+            this.setState({
+              loading: false,
+            });
+          }, 3000)}
+        </div>
+      );
+    }
   }
 }
 
