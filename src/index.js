@@ -6,7 +6,7 @@ import "./styles/index.css";
 import Header from "./components/Header";
 import Loading from "./components/Loading";
 import Welcome from "./components/Welcome";
-// import About from "./components/About";
+import About from "./components/About";
 
 class App extends Component {
   constructor(props) {
@@ -18,16 +18,17 @@ class App extends Component {
         projects: false,
         contact: false,
       },
-      loading: true,
+      loading: false,
     };
   }
   render() {
     if (!this.state.loading) {
       return (
-        <div style={{ disply: "flex" }}>
+        <div style={{ disply: "flex" }} id="HomeSection">
           <Header active={this.state.active} />
           <div style={{ width: "100%", height: "2000px" }}>
             <Welcome />
+            <About />
           </div>
         </div>
       );

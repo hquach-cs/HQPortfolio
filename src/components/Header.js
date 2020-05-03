@@ -25,7 +25,6 @@ export default class Header extends Component {
     const { prevScrollpos } = this.state;
 
     const currentScrollPos = window.pageYOffset;
-    console.log(window.pageYOffset);
     const visible = prevScrollpos > currentScrollPos;
 
     this.setState({
