@@ -19,7 +19,7 @@
   border: 1px solid #66fcf1;
   width: 350px;
   height: 350px;
-  transform: translate(43%, -50px);
+  transform: translate(185px, -50px);
 }
 
 .about-welcome {
@@ -33,12 +33,14 @@
   padding: 20px;
   max-width: 30vw;
   margin-left: 20vw;
+  margin-top: -20px;
 }
 
 .about-education {
   background-color: #45a29e;
   padding: 20px;
   max-width: 30vw;
+  margin-top: -10px;
 }
 
 .about-TBD {
@@ -46,4 +48,5 @@
   max-width: 30vw;
   margin-left: 20vw;
   padding: 20px;
+  margin-top: -7px;
 }
