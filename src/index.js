@@ -17,7 +17,7 @@ class App extends Component {
         projects: false,
         contact: false,
       },
-      loading: false,
+      loading: true,
     };
   }
   render() {
