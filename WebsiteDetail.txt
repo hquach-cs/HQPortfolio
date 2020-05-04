@@ -1,5 +1,0 @@
-#0B0C10 dark black
-#1F2833 light dark black
-#C5C6C7 whte
-#66FCF1 light blue
-#45A29E Darkish blue
