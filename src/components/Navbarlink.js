@@ -15,10 +15,7 @@ function Navbarlink(state) {
               state.active ? "navbar-link-active" : "navbar-link-notactive"
             }
           >
-            <a
-              href={"#" + state.name + "Section"}
-              onClick={() => state.handler(state.name)}
-            >
+            <a href={"#" + state.name + "Section"}>
               <span>{state.id}. </span>
               {state.name}
             </a>

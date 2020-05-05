@@ -20,7 +20,7 @@ class App extends Component {
       },
       loading: true,
       prevScrollpos: window.pageYOffset,
-      headerVisible: true,
+      visible: true,
       aboutVisible: false,
       projectsVisible: false,
     };
@@ -41,14 +41,36 @@ class App extends Component {
     const currentScrollPos = window.pageYOffset;
     const visible = prevScrollpos > currentScrollPos;
     console.log(currentScrollPos);
+    if (currentScrollPos < 500) {
+      this.setState({
+        active: {
+          welcome: true,
+          about: false,
+          projects: false,
+          contact: false,
+        },
+      });
+    }
     if (currentScrollPos >= 500) {
       this.setState({
         aboutVisible: true,
+        active: {
+          welcome: false,
+          about: true,
+          projects: false,
+          contact: false,
+        },
       });
     }
     if (currentScrollPos >= 1400) {
       this.setState({
         projectsVisible: true,
+        active: {
+          welcome: false,
+          about: false,
+          projects: true,
+          contact: false,
+        },
       });
     }
     this.setState({
@@ -63,7 +85,7 @@ class App extends Component {
         <div style={{ disply: "flex" }} id="HomeSection">
           <Header
             active={this.state.active}
-            visible={this.state.headerVisible}
+            visible={this.state.visible}
             prevScrollpos={this.state.prevScrollpos}
           />
           <Social />

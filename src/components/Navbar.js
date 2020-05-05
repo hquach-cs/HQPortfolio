@@ -6,48 +6,8 @@ import { Spring } from "react-spring/renderprops";
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      welcome: this.props.active.welcome,
-      about: this.props.active.about,
-      projects: this.props.active.projects,
-      contact: this.props.active.contact,
-    };
+    this.state = {};
   }
-
-  handleClick = (param) => {
-    if (param === "Home") {
-      this.setState({
-        welcome: true,
-        about: false,
-        projects: false,
-        contact: false,
-      });
-    }
-    if (param === "About") {
-      this.setState({
-        welcome: false,
-        about: true,
-        projects: false,
-        contact: false,
-      });
-    }
-    if (param === "Projects") {
-      this.setState({
-        welcome: false,
-        about: false,
-        projects: true,
-        contact: false,
-      });
-    }
-    if (param === "Contact") {
-      this.setState({
-        welcome: false,
-        about: false,
-        projects: false,
-        contact: true,
-      });
-    }
-  };
 
   render() {
     return (
@@ -85,30 +45,26 @@ export default class Navbar extends Component {
           <Navbarlink
             name="Home"
             id="1"
-            active={this.state.welcome}
+            active={this.props.active.welcome}
             delay={250}
-            handler={this.handleClick}
           />
           <Navbarlink
             name="About"
             id="2"
-            active={this.state.about}
+            active={this.props.active.about}
             delay={500}
-            handler={this.handleClick}
           />
           <Navbarlink
             name="Projects"
             id="3"
-            active={this.state.projects}
+            active={this.props.active.projects}
             delay={750}
-            handler={this.handleClick}
           />
           <Navbarlink
             name="Contact"
             id="4"
-            active={this.state.contact}
+            active={this.props.active.contact}
             delay={1000}
-            handler={this.handleClick}
           />
         </ul>
       </nav>
