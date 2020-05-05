@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/HQPortfolio/static/css/main.0515749c.chunk.css",
-    "main.js": "/HQPortfolio/static/js/main.3fa2c65d.chunk.js",
-    "main.js.map": "/HQPortfolio/static/js/main.3fa2c65d.chunk.js.map",
+    "main.css": "/HQPortfolio/static/css/main.c3d121d2.chunk.css",
+    "main.js": "/HQPortfolio/static/js/main.4aff82ba.chunk.js",
+    "main.js.map": "/HQPortfolio/static/js/main.4aff82ba.chunk.js.map",
     "runtime-main.js": "/HQPortfolio/static/js/runtime-main.f9688c34.js",
     "runtime-main.js.map": "/HQPortfolio/static/js/runtime-main.f9688c34.js.map",
     "static/js/2.97a1a9eb.chunk.js": "/HQPortfolio/static/js/2.97a1a9eb.chunk.js",
     "static/js/2.97a1a9eb.chunk.js.map": "/HQPortfolio/static/js/2.97a1a9eb.chunk.js.map",
     "index.html": "/HQPortfolio/index.html",
-    "precache-manifest.9d90c195e8b52bd7346083195a5c164e.js": "/HQPortfolio/precache-manifest.9d90c195e8b52bd7346083195a5c164e.js",
+    "precache-manifest.94de7beed16bc84ac2a55a2ebfc4eb69.js": "/HQPortfolio/precache-manifest.94de7beed16bc84ac2a55a2ebfc4eb69.js",
     "service-worker.js": "/HQPortfolio/service-worker.js",
-    "static/css/main.0515749c.chunk.css.map": "/HQPortfolio/static/css/main.0515749c.chunk.css.map",
+    "static/css/main.c3d121d2.chunk.css.map": "/HQPortfolio/static/css/main.c3d121d2.chunk.css.map",
     "static/js/2.97a1a9eb.chunk.js.LICENSE.txt": "/HQPortfolio/static/js/2.97a1a9eb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f9688c34.js",
     "static/js/2.97a1a9eb.chunk.js",
-    "static/css/main.0515749c.chunk.css",
-    "static/js/main.3fa2c65d.chunk.js"
+    "static/css/main.c3d121d2.chunk.css",
+    "static/js/main.4aff82ba.chunk.js"
   ]
 }
