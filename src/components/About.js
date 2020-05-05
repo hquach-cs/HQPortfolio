@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./../styles/about.css";
 import AboutCard from "./AboutCard";
+import { Spring } from "react-spring/renderprops";
 
 export default class About extends Component {
   constructor(props) {
@@ -32,35 +33,46 @@ export default class About extends Component {
       },
     };
   }
+
   render() {
     return (
       <section class="about" id="AboutSection">
-        <div>
-          <h2 class="about-title">
-            <span style={{ fontSize: "40px" }}>2.</span> About Me
-            <div class="about-image"></div>
-          </h2>
-          <AboutCard
-            class={this.state.welcome.class}
-            title={this.state.welcome.title}
-            text={this.state.welcome.text}
-          />
-          <AboutCard
-            class={this.state.goals.class}
-            title={this.state.goals.title}
-            text={this.state.goals.text}
-          />
-          <AboutCard
-            class={this.state.education.class}
-            title={this.state.education.title}
-            text={this.state.education.text}
-          />
-          <AboutCard
-            class={this.state.tbd.class}
-            title={this.state.tbd.title}
-            text={this.state.tbd.text}
-          />
-        </div>
+        <Spring
+          from={{ opacity: 0, marginTop: 0 }}
+          to={{ opacity: this.props.visible ? 1 : 0, marginTop: 0 }}
+          config={{ delay: 0, duration: 1000 }}
+        >
+          {(props) => (
+            <div style={props}>
+              <div>
+                <h2 class="about-title">
+                  <span style={{ fontSize: "40px", color: "#66FCF1" }}>2.</span>{" "}
+                  About Me
+                </h2>
+                <AboutCard
+                  class={this.state.welcome.class}
+                  title={this.state.welcome.title}
+                  text={this.state.welcome.text}
+                ></AboutCard>
+                <AboutCard
+                  class={this.state.goals.class}
+                  title={this.state.goals.title}
+                  text={this.state.goals.text}
+                />
+                <AboutCard
+                  class={this.state.education.class}
+                  title={this.state.education.title}
+                  text={this.state.education.text}
+                />
+                <AboutCard
+                  class={this.state.tbd.class}
+                  title={this.state.tbd.title}
+                  text={this.state.tbd.text}
+                />
+              </div>
+            </div>
+          )}
+        </Spring>
       </section>
     );
   }

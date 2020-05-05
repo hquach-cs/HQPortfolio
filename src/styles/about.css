@@ -1,5 +1,7 @@
 .about {
+  position: relative;
   padding-top: 100px;
+  top: -100px;
   width: 100%;
   color: #c5c6c7;
   display: flex;
@@ -9,17 +11,6 @@
 .about-title {
   margin-bottom: 50px;
   transform: translateX(120px);
-}
-
-.about-image {
-  display: inline-block;
-  position: absolute;
-  background-color: rgba(102, 252, 241, 0.6);
-  box-shadow: 2px 2px 10px 2px #0ff;
-  border: 1px solid #66fcf1;
-  width: 350px;
-  height: 350px;
-  transform: translate(185px, -50px);
 }
 
 .about-welcome {
