@@ -35,11 +35,13 @@ export default class Welcome extends Component {
             job hunting for an entry position as a software engineer, web
             developer, or data scientist.
           </p>
-          <input
-            type="button"
-            value="Learn More ..."
-            class="welcome-button"
-          ></input>
+          <a href="#AboutSection">
+            <input
+              type="button"
+              value="Learn More ..."
+              class="welcome-button"
+            ></input>
+          </a>
         </div>
       </section>
     );

@@ -1,0 +1,35 @@
+.contacts {
+  z-index: -1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin: 300px 0px 300px 0px;
+  text-align: center;
+}
+
+.contacts-content {
+  margin: 20px 0px 40px;
+}
+
+.contacts-button {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: #66fcf1;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #66fcf1;
+}
+
+.contacts-button:hover {
+  background-color: #45a29e;
+  transform: translateY(-2px);
+}
+
+.contacts-github-link:hover {
+  color: #66fcf1;
+}

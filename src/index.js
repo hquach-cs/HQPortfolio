@@ -7,6 +7,8 @@ import Welcome from "./components/Welcome";
 import About from "./components/About";
 import Social from "./components/Social";
 import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -23,6 +25,7 @@ class App extends Component {
       visible: true,
       aboutVisible: false,
       projectsVisible: false,
+      contactsVisible: false,
     };
   }
 
@@ -73,6 +76,17 @@ class App extends Component {
         },
       });
     }
+    if (currentScrollPos >= 2300) {
+      this.setState({
+        contactsVisible: true,
+        active: {
+          welcome: false,
+          about: false,
+          projects: false,
+          contact: true,
+        },
+      });
+    }
     this.setState({
       prevScrollpos: currentScrollPos,
       visible,
@@ -93,6 +107,8 @@ class App extends Component {
             <Welcome />
             <About visible={this.state.aboutVisible} />
             <Projects visible={this.state.projectsVisible} />
+            <Contacts visible={this.state.contactsVisible} />
+            <Footer />
           </div>
         </div>
       );
