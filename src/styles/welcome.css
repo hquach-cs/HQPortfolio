@@ -27,7 +27,7 @@
 }
 
 .welcome-background {
-  width: 650px;
+  width: 40%;
   height: 250px;
   background-color: #1f2833;
   position: absolute;
@@ -37,14 +37,13 @@
 }
 
 .welcome-background-2 {
-  width: 530px;
+  width: 35%;
   height: 220px;
   background-color: #45a29e;
   position: absolute;
   z-index: -1;
   transform: translate(300px, 70px);
   animation: movingDown2 1.5s ease-in-out 0.2s forwards;
-  opacity: 0;
 }
 
 @keyframes movingDown {
@@ -66,5 +65,15 @@
   to {
     transform: translate(300px, 70px);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-background {
+    display: none;
+  }
+
+  .welcome-background-2 {
+    display: none;
   }
 }

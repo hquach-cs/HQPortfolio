@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: -1;
 }
 
 .card {
@@ -26,7 +27,7 @@
   grid-auto-rows: 240px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .card-tall {
     grid-row: span 2 / auto;
   }

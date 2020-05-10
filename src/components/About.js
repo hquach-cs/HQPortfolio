@@ -28,8 +28,7 @@ export default class About extends Component {
       tbd: {
         class: "about-TBD",
         title: "TBD",
-        text:
-          "Integer vehicula justo vel sapien viverra congue. Etiam efficitur In scelerisque porta dictum. Suspendisse condimentum finibus eros,",
+        text: "TBD",
       },
     };
   }
@@ -44,9 +43,9 @@ export default class About extends Component {
         >
           {(props) => (
             <div style={props}>
-              <div>
+              <div class="about-list">
                 <h2 class="about-title">
-                  <span style={{ fontSize: "40px", color: "#66FCF1" }}>2.</span>{" "}
+                  <span style={{ fontSize: "40px", color: "#66FCF1" }}>2.</span>
                   About Me
                 </h2>
                 <AboutCard
