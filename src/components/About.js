@@ -27,8 +27,9 @@ export default class About extends Component {
       },
       tbd: {
         class: "about-TBD",
-        title: "TBD",
-        text: "TBD",
+        title: "Skills",
+        text:
+          "I am proficient in python, c/c++,java, javascript, html5/css, machine learning, and data analyst",
       },
     };
   }

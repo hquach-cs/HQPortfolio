@@ -49,3 +49,9 @@
 .social-icon:hover svg {
   color: #66fcf1;
 }
+
+@media screen and (max-width: 768px) {
+  .social-bar-right {
+    display: none;
+  }
+}

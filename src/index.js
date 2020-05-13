@@ -20,7 +20,7 @@ class App extends Component {
         projects: false,
         contact: false,
       },
-      loading: false,
+      loading: true,
       prevScrollpos: window.pageYOffset,
       visible: true,
       aboutVisible: false,

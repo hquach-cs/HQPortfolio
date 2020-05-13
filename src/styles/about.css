@@ -43,6 +43,11 @@
   margin-top: -7px;
 }
 
+.about-TBD h3 {
+  color: #66fcf1;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
   .about-welcome {
     max-width: 50vw;
