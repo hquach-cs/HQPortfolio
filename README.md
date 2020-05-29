@@ -10,17 +10,17 @@ With this project, I attended to learn some tools/skills for professional use:
 
 * React.js
 * HTML5/CSS/JS
-* Github Pages
+* Github Pages (Personal use for more projects to come)
 * ~~Backend~~
 
 ## Experience
 
-This was roughly my second attempt at a protfolio website useing react.js for the front-end. I wanted to learn more about the back-end tools but that will be its own project.
+This was roughly my second attempt at a protfolio website using react.js for the front-end. I wanted to learn more about the back-end tools but that will be its own project.
 
 ## Future
 * Redesign the project list
 * Reformat the code for responsive layout
-* Reformat the fontsize to be responsive
-* Animate different project's card when select
+* Reformat the font-size to be responsive
+* Animate different project's card when selected
 * Navbar smooth transition
-* Add a own tab for skills layout
+* Create a skill only section
