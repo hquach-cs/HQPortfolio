@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Image of Websitet](/readmePic.PNG)
+[![Image of Websitet](/readmePic.PNG)](https://hquachcs.com/)
 
 This project is my open source portfolio website used when representing myself when looking for a job.
 
